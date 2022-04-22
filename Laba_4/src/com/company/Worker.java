@@ -41,7 +41,7 @@ public class Worker {
         return "Worker["+
                 "Surname=" + surname +
                 ", position=" + position +
-                ", signing contract=" + signing_contract +
+                ", date of signing the contract=" + signing_contract +
                 ", contract end=" + contract_end +
                 ", income=" + income +
                 "]";

@@ -9,18 +9,19 @@ public class Utilities {
         str = str.strip();
         char[] ch = str.toCharArray();
         for (int i = 0; i < ch.length; i++) {
-            if (i == 0) {
-                if (Character.isAlphabetic(ch[i]) && Character.isUpperCase(ch[i])) {
+            if (i != 0) {
+                if (Character.isAlphabetic(ch[i]) && Character.isLowerCase(ch[i])) {
                     result += ch[i];
-                    continue;
                 } else {
                     result = "Unknown";
                     break;
                 }
             }
-            if (i != 0) {
-                if (Character.isAlphabetic(ch[i]) && Character.isLowerCase(ch[i])) {
+
+            else {
+                if (Character.isAlphabetic(ch[i]) && Character.isUpperCase(ch[i])) {
                     result += ch[i];
+                    continue;
                 } else {
                     result = "Unknown";
                     break;
